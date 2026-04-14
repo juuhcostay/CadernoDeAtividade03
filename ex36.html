@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var nome = parseFloat(prompt("Digite o nome:"));
+         var vendas = parseFloat(prompt("Digite o valor das vendas:"));
+         var comissao = parseFloat(prompt("Digite o valor da comissao:"));
+
+         if (vendas > 50000000) {
+            document.write("A comissao sera de 12%! = R$" + vendas * 0.12);
+
+        } else if (vendas > 30000000 < 50000000) {
+            document.write("A comissao sera de 9.5%! = R$" + vendas * 0.095);
+
+        } else {
+            document.write("A comissao sera de 7%! = R$" + vendas * 0.7);
+        }
+
+        
+    </script>
+</body>
+</html>
