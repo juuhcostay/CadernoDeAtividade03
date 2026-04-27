@@ -9,22 +9,22 @@
     <script>
         var compra = parseInt(prompt("Digite o valor da compra:"));
         var troco = parseInt(prompt("Digite o valor do troco:"));
-        var troco = troco - compra
+        var troco = compra - troco
 
         document.write("valor da compra: " + compra + "<br>");
         
-        document.write("valor do troco: " + valor + "<br>");
+        document.write("valor do troco: " + troco + "<br>");
 
-        if (troco >= 100) {
+        if (troco > 99) {
             document.write("O troco sera com a nota 100");
 
         }
-        if (troco >= 10 < 100) {
+        if (troco > 10, troco < 100) {
             document.write("O troco sera com a nota 10");
 
         }
         if (troco < 10) {
-            document.write("O troco sera com a nota 1")
+            document.write("O troco sera com a nota 1");
 
         }
         

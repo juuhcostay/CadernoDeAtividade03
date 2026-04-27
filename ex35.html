@@ -8,18 +8,18 @@
 <body>
     <script>
         var nome = prompt("Digite seu nome:");
-        var p1 = prompt("Digite a nota da prova de Portugues:");
-        var p2 = prompt("Digite a nota da prova de matematica:");
-        var p3 = prompt("Digite a nota da prova de Conhecimentos Gerais:");
+        var p1 = parseFloat(prompt("Digite a nota da prova de Portugues:"));
+        var p2 = parseFloat(prompt("Digite a nota da prova de matematica:"));
+        var p3 = parseFloat(prompt("Digite a nota da prova de Conhecimentos Gerais:"));
 
         if (p1 >= 7, p2 >= 7, p3 >= 7) {
-            document.write(nome + "Aluno APROVADO:");
+            document.write(nome + "APROVADO:");
 
         }else if (p1 <= 7, p2 <= 7, p3 <= 7) {
-            document.write(nome + "Aluno Reprovado" );
+            document.write(nome +  "Reprovado");  
         }
         
         
     </script>
 </body>
-</html>
+</html> 

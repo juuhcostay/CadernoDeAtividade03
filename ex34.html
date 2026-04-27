@@ -7,13 +7,53 @@
 </head>
 <body>
     <script>
-        var valor1 = parseFloat(prompt("Digite o valor de 1:"));
-        var valor2 = parseFloat(prompt("Digite o valor de 2:"));
-        var valor3 = parseFloat(prompt("Digite o valor de 3:"));
+        var menor, meio, maior, a, b, c;
+        a = parseFloat(prompt("Digite o valor de 1:"));
+        b = parseFloat(prompt("Digite o valor de 2:"));
+        c = parseFloat(prompt("Digite o valor de 3:"));
 
-        var valores = (valores1,valor2,valor3);
+        if (a < b){
+            if (a < c){
+                menor = a
+                if (b < c){
+                    meio = b;
+                    maior = c;
+                }else{
+                    meio = c;
+                    maior = b;
+                }
+                 
+            }
+        }
 
-        document.write("Ordem crescente" + "," + valor1 + "," + valor2 + "," + valor3);
+        if (b < a){
+            if (b < c){
+                menor = b;
+                if (a < c){
+                    meio = a;
+                    maior = c;
+                }else{
+                    meio = c;
+                    maior = a;
+                }
+            }
+        }
+
+        if (c < a){
+            if (c < b){
+                menor = c;
+                if (a < b){
+                    meio = a;
+                    maior = b;
+                }else{
+                    meio = b;
+                    maior = a;
+                }
+            }
+        }
+        document.write("<br>Menor: " +menor)
+        document.write("<br>Menor: " +meio)
+        document.write("<br>Menor: " +maior)
     </script>
 </body>
 </html>
